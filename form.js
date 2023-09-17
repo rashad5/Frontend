@@ -1,7 +1,7 @@
 const form = document.querySelector('.form');
     const clearbtn = document.querySelector('.clear');
-    const delform = document.querySelector('.fclear');
-
+    const delform = document.querySelector('.delform');
+    const did = document.querySelector('.did');
     form.addEventListener('submit', function (e) {
         e.preventDefault();
         
@@ -9,7 +9,6 @@ const form = document.querySelector('.form');
         const name = form.querySelector('.name').value;
         const surname = form.querySelector('.surname').value;
         const password = form.querySelector('.password').value;
-        const address = form.querySelector('.address').value;
 
 
         if (name.length < 3) {
@@ -27,21 +26,20 @@ const form = document.querySelector('.form');
             name,
             surname,        
             password,
-            address,
         };
         console.log(user);
 
-       axios.post("https://api-2d7b.onrender.com/users", user);
+       axios.post("https://back-1ztj.onrender.com/users", user);
 
-        form.reset();
     });
 
-    delform.addEventListener('click' , function(e) {
+
+    delform.addEventListener('submit' , function(e) {
         e.preventDefault();
-        axios.delete(`https://api-2d7b.onrender.com/users/${did.value}`);
+        console.log(did);
+         axios.delete(`https://back-1ztj.onrender.com/users/${did.value}`);
 
     } );
-
 
 
     clearbtn.addEventListener('click', function () {
