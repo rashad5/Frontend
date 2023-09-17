@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qeydiyyat Formu</title>
+</head>
+<body>
+    <h1>Qeydiyyat Formu</h1>
+    <form class="form">
+
+        <label for="cid">İD:</label>
+        <input type="number" class="cid" required placeholder="ID-nizi qeyd edin">
+        <br> <br>
+        <label for="name">Ad:</label>
+        <input type="text" class="name" required placeholder="Adınızı qeyd edin">
+        <br> <br>
+
+        <label for="surname">Soyad:</label>
+        <input type="text" class="surname" required placeholder="Soyadınızı qeyd edin">
+        <br> <br>
+
+        <label for="password">Şifrə:</label>
+        <input type="password" class="password" required placeholder="Şifrənizi qeyd edin">
+        <br> <br>
+
+        <label for="address">Ünvan:</label>
+        <input type="text" class="address" required placeholder="Ünvanınızı qeyd edin">
+        <br> <br>
+
+        <button type="submit">Təsdiq et</button>
+        <button type="button" class="clear">Təmizlə</button>
+    </form>
+
+    <br><br>
+
+    <h1>Qeydiyyat Silmə</h1>
+
+    <form class="delform">
+        <label class="did">İD:</label>
+        <input type="number"  class="did" placeholder="ID-nizi qeyd edin">
+        <button type="button" class="fclear">Silmək</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="form.js"></script>
+</body>
+</html>
