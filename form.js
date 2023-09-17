@@ -29,7 +29,7 @@ const form = document.querySelector('.form');
         };
         console.log(user);
 
-       axios.post("https://back-1ztj.onrender.com/users", user);
+       axios.post("https://back-4nvf.onrender.com/users", user);
 
     });
 
@@ -37,7 +37,7 @@ const form = document.querySelector('.form');
     delform.addEventListener('submit' , function(e) {
         e.preventDefault();
         console.log(did);
-         axios.delete(`https://back-1ztj.onrender.com/users/${did.value}`);
+         axios.delete(`https://back-4nvf.onrender.com/users/${did.value}`);
 
     } );
 
